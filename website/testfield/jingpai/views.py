@@ -7,9 +7,7 @@ def index(request):
     # Construct a dictionary to pass to the template engine as its context.
     # Note the key boldmessage is the same as {{ boldmessage }} in the template!
 
-    event_list = Event.objects.order_by('-event_date')
-
-    print event_list
+    event_list = Event.objects.order_by('-date')
 
     context_dict= {'events': event_list}
 
