@@ -19,6 +19,11 @@ RawBlameHistory
 446 lines (344 sloc)  6.2 KB
 # Execute [man gitignore] in terminal for details
 
+#### migrations ####
+
+website/testfield/jingpai/migrations
+
+
 #### Secure ####
 
 # SQLite
@@ -91,7 +96,6 @@ move/templates/**/*.html
 *.*.min.js
 **/*.js.map
 *.js
-!move/static/js/common/*.js
 !**/static/ckeditor/**/*.js
 !**/static/js/libs/*.js
 !**/static/js/i18n/*.js

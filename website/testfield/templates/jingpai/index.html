@@ -13,6 +13,16 @@
         hello world! <strong>{{ boldmessage }}</strong><br />
         <a href="/rango/about/">About</a><br />
         <img src="{% static "image/jingpai/test.jpg" %}" alt="jingpai test pics" /> <!-- New line -->
+
+    {% if events %}
+        {% for event in events %}
+        <h1>{{ event.name }}</h1>>
+        <p>{{ event.event_date }}</p>
+        <p>{{ event.event_des }}</p>
+        {% endfor %}
+    {% else%}
+        <p>there is no events</p>
+    {% endif %}
     </body>
 
 </html>
