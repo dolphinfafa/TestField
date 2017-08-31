@@ -19,10 +19,6 @@ RawBlameHistory
 446 lines (344 sloc)  6.2 KB
 # Execute [man gitignore] in terminal for details
 
-#### migrations ####
-
-website/testfield/jingpai/migrations
-
 
 #### Secure ####
 
