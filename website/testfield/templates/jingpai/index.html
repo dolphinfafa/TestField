@@ -88,7 +88,7 @@
         <h1>{{ event.name }}</h1>>
         <p>{{ event.date }}</p>
         <p>{{ event.des }}</p>
-        <img src="media/{{ event.img }}" alt="{{ event.name }}"/>
+        <img src="{{ MEDIA_URL }}{{ event.img }}" alt="{{ event.name }}"/>
         {% endfor %}
     {% else%}
         <p>there is no events</p>
