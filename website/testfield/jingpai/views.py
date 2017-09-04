@@ -16,3 +16,5 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
 
     return render(request, 'jingpai/index.html', context_dict)
+
+    #return render(request, 'template.html', context_dict)
