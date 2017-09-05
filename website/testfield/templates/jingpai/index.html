@@ -223,9 +223,6 @@
               <!-- End Icon Blocks -->
             </div>
             
-       
-
-            
           </div>
           <!-- End Icon Blocks -->
 
@@ -237,6 +234,337 @@
         </div>
       </section>
       <!--end of componet block-->
+      
+      <!-- Jing Brand -->
+      <section class="container g-py-100 g-pb-70">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 g-mb-30">
+
+            <h2 class="h1 g-color-black g-font-weight-600 g-mb-35">
+              The <span class="g-color-primary">JING </span>Brand
+            </h2>
+
+            <!-- Carousel -->
+            <div id="carouselCus1" class="js-carousel js-carousel_single-item-thumbs5__slides g-pb-35"
+                 data-infinite="true"
+                 data-fade="true"
+                 data-animation="linear"
+                 data-pagi-classes="u-carousel-indicators-v1 g-bottom-0">
+              <div class="js-slide">
+                <p class="g-font-style-italic g-font-size-17 mb-4">
+                  Jing Brand Co., was founded in 1953, and located at Daye, Hubei Province, China.
+                  After more than 60 years of steady development, Jing Brand has become a healthy food-specialized company.
+                  As China's top leader in health-care liqueur & spirits industry, Jing brand has developed its renowned flagship product "JING liqueur" and many other products.
+                </p>
+                <p class="g-font-style-italic g-font-size-17 mb-4">
+                  Jing Brand began its international business in 2000. After fifteen years of development, "JING Liqueur" has been exported to Hong Kong, macau, Southeast Asia,
+                  Europe, North America, Africa etc, and gained high speed growth every year.
+                </p>
+              </div>
+              
+            </div>
+            <!-- End Carousel -->
+          </div>
+
+          <div class="col-lg-6 g-mt-50 g-mb-30">
+            <!-- Article -->
+            <article class="u-shadow-v24 u-shadow-v21--hover g-pos-rel g-bg-white g-transition-0_3 g-pa-10 rounded">
+              <img class="img-fluid w-100" src="{% static 'image/jingpai/brand.jpg' %}" alt="Image description">
+            </article>
+            <!-- End Article -->
+          </div>
+        </div>
+      </section>
+      <!-- End of Jing Brand -->
+      
+      
+      <!-- Event Blocks -->
+      {% if events %}
+      <section id="event" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-pos-rel g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+        <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url({% static 'image/jingpai/event/background.jpg' %});"></div>
+
+        <!--<div class="g-pos-abs g-top-0 g-left-0"-->
+             <!--data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"-70", mid:"0", final:"70"}]'-->
+             <!--data-animation="fadeInDown"-->
+             <!--data-animation-duration="1500">-->
+          <!--<img class="img-fluid" src="" alt="Image description">-->
+        <!--</div>-->
+        <!--<div class="g-pos-abs g-bottom-minus-70 g-right-0"-->
+             <!--data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}px,0)", initial:"70", mid:"0", final:"-70"}]'-->
+             <!--data-animation="fadeInUp"-->
+             <!--data-animation-duration="1500">-->
+          <!--<img class="img-fluid" src="../../assets/img-temp/1920x1080/img16.png" alt="Image description">-->
+        <!--</div>-->
+
+        <div class="container g-z-index-1 g-pt-150 g-pb-120">
+          <div class="text-center g-mb-50">
+            <span class="g-color-black-opacity-0_8 g-font-weight-600 g-font-size-default text-uppercase mb-2">Events</span>
+            <h2 class="h1 g-color-black g-font-weight-600">Finding Our events</h2>
+            <!--<p class="lead g-color-black-opacity-0_8"></p>-->
+          </div>
+
+          
+          <div class="row align-items-center">
+            {% for event in events %}
+            <div class="col-md-4 g-mb-30">
+              <!-- Article -->
+              <article class="u-shadow-v21 text-center g-bg-white rounded g-px-20 g-py-80">
+                <!-- Article Header -->
+                <header class="g-mb-10">
+                  <h4 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0">{{ event.date }}</h4>
+                  <!--<span class="g-color-black g-font-weight-700 g-font-size-20">$</span>-->
+                  <span class="g-color-black g-font-weight-600 g-font-size-30">{{ event.name }}</span>
+                  <!--<span class="g-color-gray-dark-v4 g-font-size-17">/ mnt</span>-->
+                </header>
+                <!-- End Article Header -->
+
+                <!-- Article Content -->
+                <ul class="list-unstyled g-color-gray-dark-v4 g-mb-30">
+                  <li class="my-2">{{ event.des }}</li>
+                  <!--<li class="my-2"><strong class="g-color-black">22</strong> Reviews</li>-->
+                  <!--<li class="my-2"><strong class="g-color-black">12/5</strong> Support</li>-->
+                </ul>
+  
+                <img src="{{ MEDIA_URL }}{{ event.img }}" alt="{{ event.name }}" class="img-fuild w-100"/>
+
+                <!--<a class="btn u-btn-outline-black g-rounded-50 g-py-12 g-px-30" href="#">Book now</a>-->
+                <!-- End Article Content -->
+              </article>
+              <!-- End Article -->
+            </div>
+            {% endfor %}
+          </div>
+          
+          
+        </div>
+      </section>
+      {% endif %}
+      <!-- End of Event Blocks -->
+      
+      <!-- Footer -->
+      <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+              <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Us</h2>
+              </div>
+
+              <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+              <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Latest Posts</h2>
+              </div>
+
+              <article>
+                <h3 class="h6 g-mb-2">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Incredible template</a>
+                </h3>
+                <div class="small g-color-white-opacity-0_6">May 8, 2017</div>
+              </article>
+
+              <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+              <article>
+                <h3 class="h6 g-mb-2">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">New features</a>
+                </h3>
+                <div class="small g-color-white-opacity-0_6">June 23, 2017</div>
+              </article>
+
+              <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+              <article>
+                <h3 class="h6 g-mb-2">
+                  <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">New terms and conditions</a>
+                </h3>
+                <div class="small g-color-white-opacity-0_6">September 15, 2017</div>
+              </article>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+              <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
+              </div>
+
+              <nav class="text-uppercase1">
+                <ul class="list-unstyled g-mt-minus-10 mb-0">
+                  <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                    <h4 class="h6 g-pr-20 mb-0">
+                      <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">About Us</a>
+                      <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                    </h4>
+                  </li>
+                  <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                    <h4 class="h6 g-pr-20 mb-0">
+                      <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Portfolio</a>
+                      <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                    </h4>
+                  </li>
+                  <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                    <h4 class="h6 g-pr-20 mb-0">
+                      <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Our Services</a>
+                      <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                    </h4>
+                  </li>
+                  <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                    <h4 class="h6 g-pr-20 mb-0">
+                      <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Latest Jobs</a>
+                      <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                    </h4>
+                  </li>
+                  <li class="g-pos-rel g-py-10">
+                    <h4 class="h6 g-pr-20 mb-0">
+                      <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Contact Us</a>
+                      <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                    </h4>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- End Footer Content -->
+
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6">
+              <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
+              </div>
+
+              <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url(../../assets/img/maps/map2.png);">
+                <!-- Location -->
+                <div class="d-flex g-mb-20">
+                  <div class="g-mr-10">
+                    <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                      <i class="fa fa-map-marker"></i>
+                    </span>
+                  </div>
+                  <p class="mb-0">795 Folsom Ave, Suite 600, <br> San Francisco, CA 94107 795</p>
+                </div>
+                <!-- End Location -->
+
+                <!-- Phone -->
+                <div class="d-flex g-mb-20">
+                  <div class="g-mr-10">
+                    <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                      <i class="fa fa-phone"></i>
+                    </span>
+                  </div>
+                  <p class="mb-0">(+123) 456 7890 <br> (+123) 456 7891</p>
+                </div>
+                <!-- End Phone -->
+
+                <!-- Email and Website -->
+                <div class="d-flex g-mb-20">
+                  <div class="g-mr-10">
+                    <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                      <i class="fa fa-globe"></i>
+                    </span>
+                  </div>
+                  <p class="mb-0">
+                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:info@htmlstream.com">info@htmlstream.com</a>
+                    <br>
+                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">www.htmlstream.com</a>
+                  </p>
+                </div>
+                <!-- End Email and Website -->
+              </address>
+            </div>
+            <!-- End Footer Content -->
+          </div>
+        </div>
+      </div>
+      <!-- End Footer -->
+      
+      <!-- Copyright Footer -->
+      <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+              <div class="d-lg-flex">
+                <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved.</small>
+                <ul class="u-list-inline">
+                  <li class="list-inline-item">
+                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Privacy Policy</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span>|</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Terms of Use</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span>|</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">License</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <span>|</span>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4 align-self-center">
+              <ul class="list-inline text-center text-md-right mb-0">
+                <li class="list-inline-item g-mx-10" title="Facebook"
+                    data-toggle="tooltip"
+                    data-placement="top">
+                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10" title="Skype"
+                    data-toggle="tooltip"
+                    data-placement="top">
+                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                    <i class="fa fa-skype"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10" title="Linkedin"
+                    data-toggle="tooltip"
+                    data-placement="top">
+                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10" title="Pinterest"
+                    data-toggle="tooltip"
+                    data-placement="top">
+                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10" title="Twitter"
+                    data-toggle="tooltip"
+                    data-placement="top">
+                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-10" title="Dribbble"
+                    data-toggle="tooltip"
+                    data-placement="top">
+                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                    <i class="fa fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Copyright Footer -->
    
 
       <a class="js-go-to u-go-to-v1" href="#"
