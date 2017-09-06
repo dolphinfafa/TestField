@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+boday {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", SimHei, simsun, sans-serif;
+}
+
+.logo-bar   {
+    padding: 0;
+}
+
+.logo   {
+    height: 50px;
+}
+
+#myCarousel {
+    margin: 50px 0 0 0;
+}
+
+#navbar-collapse ul {
+    margin-top: 0;
+}
+
+.carousel-inner img {
+    margin: 0 auto;
+}
+
+.tab-h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #0059B2;
+}
+
+.tab-p {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #999;
+}
+
+.tab1 {
+    margin: 30px 0;
+    color: #666;
+}
+
+.product img {
+    height: 200px;
+}
+

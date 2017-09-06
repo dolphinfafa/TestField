@@ -29,93 +29,15 @@ website/testfield/media
 *.db
 *.sqlite3
 
-# Credentials
-gorgon.json
 
-# Collected Static Dir
-assets
-debug_assets
 
-#### Front End ####
-# node modules
-node_modules
-bower_components
 
-# css comb
-*.csscomb.json
 
-# map source
-*.map
-
-# test
-test
-!requirements/test
-#dev-tools
-dev-tools/
-# *.css.map
-*.css.map
-!move/front_end_test/test
-!move/front_end_test/test_mobile
-
-# css
-*.css
-!**/static/ckeditor/**/*.css
-!**/static/css/libs/*.css
-!**/static/css/plugins/*.css
-# 新文件夹
-!**/static/css/pages/icon-font/*.css
-!**/blog/static/css/blog/icon.css
-!**/viewflow/**/*.css
-*.scss
-!move/static/css/blog/icon.css
-!move/static/zinnia_threaded_comments/**/*.css
-!move/static/fonts/blog/**/*.css
 
 # bak
 *.bak
 *.bak.*
 
-# html
-move/templates/**/*.html
-!meta.html
-!cms_meta.html
-!move/templates/account/email/*
-!move/templates/email/*
-!move/templates/test_account/*
-!browse.html
-!**/ckeditor/**/*.html
-!**/ckeditor_uploader/**/*.html
-!**/zinnia/**/*.html
-!**/admin/change_form.html
-!test.html
-
-# js
-*.min.js
-*.*.min.js
-**/*.js.map
-*.js
-!**/static/ckeditor/**/*.js
-!**/static/js/libs/*.js
-!**/static/js/i18n/*.js
-!**/static/js/plugins/*.js
-!**/static/js/plugins/*/*.js
-!**/static/js/payment_admin.js
-!move/apps/blog/static/**/*.js
-!**/viewflow/**/*.js
-!**/gulpfile.js
-!move/webpack.config.js
-!move/webpack.dist.js
-!move/webpack.blog.js
-!move/fe_configs/**/*.js
-!move/dev_tools/**/*.js
-
-!move/front_end_test/test/commons/**/*.js
-!move/front_end_test/test/sample/**/*.js
-!move/front_end_test/test_mobile/commons/**/*.js
-!move/front_end_test/test_mobile/sample/**/*.js
-
-# ReactJS component
-!move/static/react/**/*.js
 
 #py
 *.pyc
