@@ -23,6 +23,7 @@ website/testfield/media
 
 Caddyfile
 .python-version
+website/testfield/assets
 
 #### Secure ####
 
