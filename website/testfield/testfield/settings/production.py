@@ -1,8 +1,8 @@
 import os
-from .local import *
+from local import *
 
 DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = [www.jingpai.co.uk]
+ALLOWED_HOSTS = ['www.jingpai.co.uk']
