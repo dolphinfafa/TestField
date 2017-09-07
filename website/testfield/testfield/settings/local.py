@@ -48,6 +48,10 @@ STATICFILES_DIRS = (
     STATIC_PATH,
 )
 
+# STATIC FILE CONFIGURATION
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
+STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Absolute path to the media directory
 
