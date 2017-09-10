@@ -78,13 +78,13 @@
                     <a href="#" class="nav-link g-py-7 g-px-0">Intro</a>
                   </li>
                   <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a href="#" class="nav-link g-py-7 g-px-0">Product</a>
+                    <a href="#product" class="nav-link g-py-7 g-px-0">Product</a>
                   </li>
                   <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a href="#" class="nav-link g-py-7 g-px-0">Brand</a>
+                    <a href="#brand" class="nav-link g-py-7 g-px-0">Brand</a>
                   </li>
                   <li class="nav-item g-mx-10--lg g-mx-15--xl">
-                    <a href="#" class="nav-link g-py-7 g-px-0">Events</a>
+                    <a href="#events" class="nav-link g-py-7 g-px-0">Events</a>
                   </li>
                   
                   <!-- End Intro -->
@@ -104,7 +104,7 @@
       <!-- End Header -->
       
       <!-- Promo Block -->
-      <section class="container g-pt-50">
+      <section class="container g-pt-50" id="promo">
         <div class="u-shadow-v24 g-bg-white rounded g-pa-20">
           <div class="g-bg-cover g-bg-img-hero g-bg-black-opacity-0_1--after g-px-20 g-py-200" style="background-image: url({% static 'image/jingpai/jingjiu.jpg' %});">
             <div class="text-center g-pos-rel g-z-index-1">
@@ -118,7 +118,7 @@
       <!-- End Promo Block -->
       
       <!--product block-->
-      <section class="container g-pt-100 g-pb-40">
+      <section class="container g-pt-100 g-pb-40" id="product">
         <div class="row justify-content-between">
           <div class="col-lg-5 flex-lg-unordered g-mt-50--lg g-mb-60">
             <div class="mb-2">
@@ -236,7 +236,7 @@
       <!--end of componet block-->
       
       <!-- Jing Brand -->
-      <section class="container g-py-100 g-pb-70">
+      <section class="container g-py-100 g-pb-70" id="brand">
         <div class="row justify-content-between">
           <div class="col-lg-5 g-mb-30">
 
@@ -279,8 +279,9 @@
       
       
       <!-- Event Blocks -->
-      {% if events %}
-      <section id="event" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-pos-rel g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+      <div id="events">
+        {% if events %}
+        <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-pos-rel g-overflow-hidden" data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
         <div class="divimage dzsparallaxer--target w-100" style="height: 110%; background-image: url({% static 'image/jingpai/event/background.jpg' %});"></div>
 
         <!--<div class="g-pos-abs g-top-0 g-left-0"-->
@@ -338,11 +339,12 @@
           
         </div>
       </section>
-      {% endif %}
+        {% endif %}
+      </div>
       <!-- End of Event Blocks -->
       
       <!-- Footer -->
-      <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+      <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60" id="footer">
         <div class="container">
           <div class="row">
             <!-- Footer Content -->
@@ -500,31 +502,31 @@
                 <li class="list-inline-item g-mx-10" title="Facebook"
                     data-toggle="tooltip"
                     data-placement="top">
-                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
+                  <a href="https://www.facebook.com/jingpaiuk?ref=br_rs" class="g-color-white-opacity-0_5 g-color-white--hover">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
-                <li class="list-inline-item g-mx-10" title="Skype"
-                    data-toggle="tooltip"
-                    data-placement="top">
-                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                    <i class="fa fa-skype"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item g-mx-10" title="Linkedin"
-                    data-toggle="tooltip"
-                    data-placement="top">
-                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item g-mx-10" title="Pinterest"
-                    data-toggle="tooltip"
-                    data-placement="top">
-                  <a href="#" class="g-color-white-opacity-0_5 g-color-white--hover">
-                    <i class="fa fa-pinterest"></i>
-                  </a>
-                </li>
+                <!--<li class="list-inline-item g-mx-10" title="Skype"-->
+                    <!--data-toggle="tooltip"-->
+                    <!--data-placement="top">-->
+                  <!--<a href="#" class="g-color-white-opacity-0_5 g-color-white&#45;&#45;hover">-->
+                    <!--<i class="fa fa-skype"></i>-->
+                  <!--</a>-->
+                <!--</li>-->
+                <!--<li class="list-inline-item g-mx-10" title="Linkedin"-->
+                    <!--data-toggle="tooltip"-->
+                    <!--data-placement="top">-->
+                  <!--<a href="#" class="g-color-white-opacity-0_5 g-color-white&#45;&#45;hover">-->
+                    <!--<i class="fa fa-linkedin"></i>-->
+                  <!--</a>-->
+                <!--</li>-->
+                <!--<li class="list-inline-item g-mx-10" title="Pinterest"-->
+                    <!--data-toggle="tooltip"-->
+                    <!--data-placement="top">-->
+                  <!--<a href="#" class="g-color-white-opacity-0_5 g-color-white&#45;&#45;hover">-->
+                    <!--<i class="fa fa-pinterest"></i>-->
+                  <!--</a>-->
+                <!--</li>-->
                 <li class="list-inline-item g-mx-10" title="Twitter"
                     data-toggle="tooltip"
                     data-placement="top">
